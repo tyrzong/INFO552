@@ -1,0 +1,19 @@
+/* =============
+    page layout
+============= */
+
+.half-half {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas:
+        "l r";
+  }
+
+.left{
+    grid-area: l;
+}
+
+.right{
+    grid-area: r;
+}

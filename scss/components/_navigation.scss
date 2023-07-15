@@ -1,3 +1,50 @@
 /* =============
     Navigation
 ============= */
+.navbar {
+    width: 100%;
+    gap: 5px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 100px, 50px;
+    grid-template-areas:
+        "h  .  .  .  ."
+        "a  s  c  r  p";
+    background-color: gray;
+}
+.grid-item {
+    height: 50px;
+    text-align: center;
+    background-color: lightgray;
+    font-size: large;
+  }
+
+.nav-header {
+    font-size: x-large;
+    font-weight: bold;
+    text-align: center;
+}
+
+#header{
+    grid-area: h;
+}
+
+#about{
+    grid-area: a;
+}
+
+#association{
+    grid-area: s;
+}
+
+#contact{
+    grid-area: c;
+}
+
+#resume{
+    grid-area: r;
+}
+
+#projects{
+    grid-area: p;
+}

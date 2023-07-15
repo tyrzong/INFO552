@@ -15,6 +15,11 @@ html {
   --white: #ffffff;
 }
 
+img {
+  height: auto;
+  max-width: 100%;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -331,6 +336,11 @@ template {
 /* =============
     Base
 ============= */
+a {
+  color: black;
+  text-decoration: none;
+}
+
 /* =============
     Typography
 ============= */
@@ -360,6 +370,68 @@ textarea {
 /* =============
     Navigation
 ============= */
+.navbar {
+  width: 100%;
+  gap: 5px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 5px 1fr 5px 1fr 5px 1fr 5px 1fr;
+  grid-template-columns: repeat(5, 1fr);
+  -ms-grid-rows: 100px, 50px;
+  grid-template-rows: 100px, 50px;
+      grid-template-areas: "h  .  .  .  ." "a  s  c  r  p";
+  background-color: gray;
+}
+
+.grid-item {
+  height: 50px;
+  text-align: center;
+  background-color: lightgray;
+  font-size: large;
+}
+
+.nav-header {
+  font-size: x-large;
+  font-weight: bold;
+  text-align: center;
+}
+
+#header {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: h;
+}
+
+#about {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: a;
+}
+
+#association {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  grid-area: s;
+}
+
+#contact {
+  -ms-grid-row: 3;
+  -ms-grid-column: 5;
+  grid-area: c;
+}
+
+#resume {
+  -ms-grid-row: 3;
+  -ms-grid-column: 7;
+  grid-area: r;
+}
+
+#projects {
+  -ms-grid-row: 3;
+  -ms-grid-column: 9;
+  grid-area: p;
+}
+
 /* =============
     Header
 ============= */
