@@ -417,7 +417,12 @@ textarea {
   grid-template-columns: 200px, repeat(5, 1fr);
   -ms-grid-rows: 100px, 50px;
   grid-template-rows: 100px, 50px;
-      grid-template-areas: "h  h  h  h  a  p  s  r  c";
+      grid-template-areas: "h  a  p  s  r  c";
+}
+@media (min-width: 785px) {
+  .navbar {
+        grid-template-areas: "h  h  h  h  a  p  s  r  c";
+  }
 }
 .navbar .nav-header {
   text-align: center;
@@ -427,14 +432,9 @@ textarea {
   color: var(--darkgrey);
   font-size: 20px;
 }
-@media (min-width: 576px) {
+@media (min-width: 400px) {
   .navbar .nav-header h1 {
     font-size: 35px;
-  }
-}
-@media (min-width: 785px) {
-  .navbar .nav-header h1 {
-    font-size: 60px;
   }
 }
 @media (min-width: 1024px) {
@@ -446,16 +446,16 @@ textarea {
   height: 50px;
   text-align: center;
   padding: 20px 0;
-  font-size: 10px;
+  font-size: 13px;
   color: var(--darktan);
 }
-@media (min-width: 576px) {
+@media (min-width: 400px) {
   .navbar .nav-item {
     padding: 45px 0;
     font-size: 13px;
   }
 }
-@media (min-width: 785px) {
+@media (min-width: 1024px) {
   .navbar .nav-item {
     padding: 80px 0;
     font-size: 20px;
@@ -468,38 +468,65 @@ textarea {
 #header {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
-  -ms-grid-column-span: 7;
   grid-area: h;
 }
 
 #about {
   -ms-grid-row: 1;
-  -ms-grid-column: 9;
+  -ms-grid-column: 3;
   grid-area: a;
 }
 
 #association {
   -ms-grid-row: 1;
-  -ms-grid-column: 13;
+  -ms-grid-column: 7;
   grid-area: s;
 }
 
 #contact {
   -ms-grid-row: 1;
-  -ms-grid-column: 17;
+  -ms-grid-column: 11;
   grid-area: c;
 }
 
 #resume {
   -ms-grid-row: 1;
-  -ms-grid-column: 15;
+  -ms-grid-column: 9;
   grid-area: r;
 }
 
 #projects {
   -ms-grid-row: 1;
-  -ms-grid-column: 11;
+  -ms-grid-column: 5;
   grid-area: p;
+}
+
+@media (min-width: 785px){
+  #header {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 4;
+  }
+  #about {
+    -ms-grid-row: 1;
+    -ms-grid-column: 5;
+  }
+  #association {
+    -ms-grid-row: 1;
+    -ms-grid-column: 7;
+  }
+  #contact {
+    -ms-grid-row: 1;
+    -ms-grid-column: 9;
+  }
+  #resume {
+    -ms-grid-row: 1;
+    -ms-grid-column: 8;
+  }
+  #projects {
+    -ms-grid-row: 1;
+    -ms-grid-column: 6;
+  }
 }
 
 /* =============

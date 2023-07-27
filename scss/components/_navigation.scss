@@ -9,7 +9,11 @@
     grid-template-columns: 200px, repeat(5, 1fr);
     grid-template-rows: 100px, 50px;
     grid-template-areas:
+        "h  a  p  s  r  c";
+    @include md{
+        grid-template-areas:
         "h  h  h  h  a  p  s  r  c";
+    }
 
     .nav-header {
         text-align: center;
@@ -20,9 +24,6 @@
             @include sm{
                 font-size: 35px;
             }
-            @include md{
-                font-size: 60px;
-            }
             @include lg{
                 font-size: 65px;
             }
@@ -32,15 +33,14 @@
     .nav-item {
         height: 50px;
         text-align: center;
-        @include xs{
-            padding: 20px 0;
-            font-size: 13px;
-        }
+        padding: 20px 0;
+        font-size: 13px;
+       
         @include sm{
             padding: 45px 0;
             font-size: 13px;
         }
-        @include md{
+        @include lg{
             padding: 80px 0;
             font-size: 20px;
         }
