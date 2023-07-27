@@ -2,70 +2,99 @@
     Navigation
 ============= */
 .navbar {
+    margin-top: 10px;
     font-weight: 700;
     width: 100%;
     gap: 5px;
     display: grid;
-    grid-template-columns: 200px, repeat(5, 1fr);
-    grid-template-rows: 100px, 50px;
+    grid-template-rows: 70px;
+    grid-template-columns: auto;
     grid-template-areas:
-        "h  a  p  s  r  c";
+        "h cl"
+        "a ."
+        "p ."
+        "s ."
+        "r ."
+        "c .";
     @include md{
+        grid-template-rows: 100px;
+        grid-template-areas:
+        "h  h  h  h  a  p  s  r  c";
+    }
+    @include lg{
+        grid-template-rows: 100px 50px;
         grid-template-areas:
         "h  h  h  h  a  p  s  r  c";
     }
 
     .nav-header {
-        text-align: center;
         h1{
             font-weight: 700;
             color: var(--darkgrey);
-            font-size: 20px;
-            @include sm{
-                font-size: 35px;
-            }
+            font-size: 40px;
             @include lg{
                 font-size: 65px;
             }
+        }
+        @include md{
+            text-align: center;
         }
     }
 
     .nav-item {
         height: 50px;
-        text-align: center;
-        padding: 20px 0;
+        text-align: left;
         font-size: 13px;
-       
-        @include sm{
+        padding-top: 15px 0;
+        padding-bottom: 0;
+        display: none;
+        @include md{
+            text-align: center;
+            display: grid;
             padding: 45px 0;
-            font-size: 13px;
+            font-size: 20px;
         }
         @include lg{
+            display: grid;
             padding: 80px 0;
             font-size: 20px;
         }
-        color: var(--darktan)
+        color: var(--darktan);
     }
 
     .active-nav-item{
         height: 50px;
-        text-align: center;
-        padding: 20px 0;
+        text-align: left;
         font-size: 13px;
-       
-        @include sm{
+        padding-top: 15px 0;
+        padding-bottom: 0;
+        display: none;
+        @include md{
+            text-align: center;
+            display: grid;
             padding: 45px 0;
-            font-size: 13px;
+            font-size: 20px;
         }
         @include lg{
+            display: grid;
             padding: 80px 0;
             font-size: 20px;
         }
-        color: var(--darkgrey)
+        color: var(--darkgrey);
+    }
+
+    .collapse-nav-btn{ 
+        text-align: right;
+        padding: 10px;
+        margin-top: 30px;    
+        color: var(--darkgrey);
+        @include md{
+            display: none;
+        }
     }
 
     a:hover, a:active{
-        color: var(--darkgrey)
+        color: var(--darkgrey);
     }
 }
 
@@ -91,4 +120,8 @@
 
 #projects{
     grid-area: p;
+}
+
+#collapse{
+    grid-area: cl;
 }
