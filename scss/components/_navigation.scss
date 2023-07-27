@@ -8,21 +8,17 @@
     display: grid;
     grid-template-columns: 200px, repeat(5, 1fr);
     grid-template-rows: 100px, 50px;
-    
-    @include md{
-        grid-template-columns: repeat(6, 1fr);
-        grid-template-areas:
-        "h  p  a  s  r  c";
-    }
+    grid-template-areas:
+        "h  h  h  h  p  a  s  r  c";
 
     .nav-header {
         text-align: center;
         h1{
             font-weight: 700;
             color: var(--darkgrey);
-            font-size: 22px;
+            font-size: 20px;
             @include sm{
-                font-size: 45px;
+                font-size: px;
             }
             @include md{
                 font-size: 60px;
@@ -38,6 +34,7 @@
         text-align: center;
         @include xs{
             padding: 20px 0;
+            font-size: 13px;
         }
         @include sm{
             padding: 45px 0;
