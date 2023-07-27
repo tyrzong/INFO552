@@ -47,6 +47,23 @@
         color: var(--darktan)
     }
 
+    .active-nav-item{
+        height: 50px;
+        text-align: center;
+        padding: 20px 0;
+        font-size: 13px;
+       
+        @include sm{
+            padding: 45px 0;
+            font-size: 13px;
+        }
+        @include lg{
+            padding: 80px 0;
+            font-size: 20px;
+        }
+        color: var(--darkgrey)
+    }
+
     a:hover, a:active{
         color: var(--darkgrey)
     }

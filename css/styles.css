@@ -461,6 +461,25 @@ textarea {
     font-size: 20px;
   }
 }
+.navbar .active-nav-item {
+  height: 50px;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 13px;
+  color: var(--darkgrey);
+}
+@media (min-width: 400px) {
+  .navbar .active-nav-item {
+    padding: 45px 0;
+    font-size: 13px;
+  }
+}
+@media (min-width: 1024px) {
+  .navbar .active-nav-item {
+    padding: 80px 0;
+    font-size: 20px;
+  }
+}
 .navbar a:hover, .navbar a:active {
   color: var(--darkgrey);
 }
