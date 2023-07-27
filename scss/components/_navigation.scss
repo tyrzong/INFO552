@@ -9,7 +9,7 @@
     grid-template-columns: 200px, repeat(5, 1fr);
     grid-template-rows: 100px, 50px;
     grid-template-areas:
-        "h  h  h  h  p  a  s  r  c";
+        "h  h  h  h  a  p  s  r  c";
 
     .nav-header {
         text-align: center;
@@ -18,7 +18,7 @@
             color: var(--darkgrey);
             font-size: 20px;
             @include sm{
-                font-size: px;
+                font-size: 35px;
             }
             @include md{
                 font-size: 60px;
@@ -38,7 +38,7 @@
         }
         @include sm{
             padding: 45px 0;
-            font-size: 15px;
+            font-size: 13px;
         }
         @include md{
             padding: 80px 0;
