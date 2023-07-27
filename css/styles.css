@@ -370,7 +370,7 @@ body {
   font-family: var(--font-fam);
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
   font-weight: 500;
 }
 
@@ -417,7 +417,7 @@ textarea {
   grid-template-columns: 200px, repeat(5, 1fr);
   -ms-grid-rows: 100px, 50px;
   grid-template-rows: 100px, 50px;
-      grid-template-areas: "h  h  h  h  a  s  c  r  p";
+      grid-template-areas: "h  h  h  h  a  p  s  r  c";
 }
 .navbar .nav-header {
   text-align: center;
@@ -480,13 +480,13 @@ textarea {
 
 #association {
   -ms-grid-row: 1;
-  -ms-grid-column: 11;
+  -ms-grid-column: 13;
   grid-area: s;
 }
 
 #contact {
   -ms-grid-row: 1;
-  -ms-grid-column: 13;
+  -ms-grid-column: 17;
   grid-area: c;
 }
 
@@ -498,7 +498,7 @@ textarea {
 
 #projects {
   -ms-grid-row: 1;
-  -ms-grid-column: 17;
+  -ms-grid-column: 11;
   grid-area: p;
 }
 

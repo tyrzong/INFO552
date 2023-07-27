@@ -9,7 +9,7 @@
     grid-template-columns: 200px, repeat(5, 1fr);
     grid-template-rows: 100px, 50px;
     grid-template-areas:
-        "h  h  h  h  a  s  c  r  p";
+        "h  h  h  h  a  p  s  r  c";
 
     .nav-header {
         text-align: center;
