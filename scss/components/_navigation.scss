@@ -42,11 +42,10 @@
     }
 
     .nav-item {
-        height: 50px;
+        height: 30px;
         text-align: left;
         font-size: 13px;
-        padding-top: 15px 0;
-        padding-bottom: 0;
+        align-items: flex-end;
         display: none;
         @include md{
             text-align: center;
@@ -63,7 +62,7 @@
     }
 
     .active-nav-item{
-        height: 50px;
+        height: 30px;
         text-align: left;
         font-size: 13px;
         padding-top: 15px 0;
