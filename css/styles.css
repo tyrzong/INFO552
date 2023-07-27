@@ -2,7 +2,7 @@
     Mixins
 ============= */
 /* ---------------- Font Sizing ---------------- */
-@import url("https://fonts.googleapis.com/css2?family=Prompt:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Prompt:wght@300;500;700&display=swap");
 html {
   font-size: 100%;
 }
@@ -367,6 +367,15 @@ a {
 
 body {
   background-color: var(--bgcolor);
+  font-family: var(--font-fam);
+}
+
+h1, h3 {
+  font-weight: 500;
+}
+
+p {
+  font-weight: 300;
 }
 
 /* =============
@@ -399,7 +408,7 @@ textarea {
     Navigation
 ============= */
 .navbar {
-  font-family: var(--font-fam);
+  font-weight: 700;
   width: 100%;
   gap: 5px;
   display: -ms-grid;
@@ -414,9 +423,9 @@ textarea {
   text-align: center;
 }
 .navbar .nav-header h1 {
+  font-weight: 700;
   color: var(--darkgrey);
   font-size: 20px;
-  font-weight: bold;
 }
 @media (min-width: 576px) {
   .navbar .nav-header h1 {

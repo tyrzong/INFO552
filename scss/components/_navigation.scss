@@ -2,7 +2,7 @@
     Navigation
 ============= */
 .navbar {
-    font-family: var(--font-fam);
+    font-weight: 700;
     width: 100%;
     gap: 5px;
     display: grid;
@@ -14,6 +14,7 @@
     .nav-header {
         text-align: center;
         h1{
+            font-weight: 700;
             color: var(--darkgrey);
             font-size: 20px;
             @include sm{
@@ -25,7 +26,6 @@
             @include lg{
                 font-size: 65px;
             }
-            font-weight: bold;
         }
     }
 
