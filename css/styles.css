@@ -503,9 +503,12 @@ textarea {
   }
 }
 .navbar .collapse-nav-btn {
-  text-align: right;
+  height: 20px;
+  width: 20px;
+  -ms-grid-column-align: right;
+      justify-self: right;
   padding: 10px;
-  margin-top: 30px;
+  margin-top: 32px;
   color: var(--darkgrey);
 }
 @media (min-width: 785px) {

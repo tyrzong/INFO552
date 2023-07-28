@@ -1,1 +1,1 @@
-function showNav(){for(var e=document.getElementsByClassName("nav-item"),s=0;s<e.length;s++)"grid"==e[s].style.display?e[s].style.display="none":e[s].style.display="grid"}
+function toggleNav(){for(var e=document.getElementsByClassName("nav-item"),l=0;l<e.length;l++)"grid"==e[l].style.display?e[l].style.display="none":e[l].style.display="grid"}

@@ -83,9 +83,11 @@
     }
 
     .collapse-nav-btn{ 
-        text-align: right;
+        height: 20px;
+        width: 20px;
+        justify-self: right;
         padding: 10px;
-        margin-top: 30px;    
+        margin-top: 32px;    
         color: var(--darkgrey);
         @include md{
             display: none;
