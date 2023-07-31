@@ -631,8 +631,8 @@ textarea {
 }
 @media (min-width: 1024px) {
   .card-deck {
-    -ms-grid-columns: auto auto;
-    grid-template-columns: auto auto;
+    -ms-grid-columns: 50% 50%;
+    grid-template-columns: 50% 50%;
   }
 }
 @media (min-width: 1024px) {
