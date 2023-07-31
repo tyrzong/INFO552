@@ -25,23 +25,53 @@
     display: grid;
     grid-template-columns: auto;
     // background-color: brown;
+    gap: 10px;
+    @include lg{
+        grid-template-columns: repeat(2, 1fr);
+    }
     
     .card{
-        // background-color: green;
+        // border-style: solid;
+        @include lg{
+            display: grid;
+            grid-template-rows: auto auto;
+        }
         .card-img{
             padding-top: 20px;
             padding-bottom: 20px;
+            // background-color: brown;
             img{
                 display: block;
                 margin-left: auto;
                 margin-right: auto;
                 max-height: 180px;
+                @include lg{
+                    max-height: 200px;
+                }
+                
+            }
+            #afsc{
+                content: url("/img/afsc-logo-inverted.png");
+                @include lg{
+                    content: url("/img/AFSC-removebg-preview.png");
+                }
+                
             }
         }
         .card-text{
+            // background-color: purple;
             padding-left: 16px;
             padding-right: 16px;
             padding-bottom: 20px;
+            @include lg{
+                max-width: 300px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+        a{
+            margin-bottom: auto;
+            margin-top: auto;
         }
     }
 }
@@ -49,6 +79,10 @@
 .dark{
     background-color: var(--darkgrey);
     color: var(--bgcolor);
+    @include lg{
+        background-color: var(--bgcolor);
+        color: var(--darkgrey);
+    }
 }
 .light{
     background-color: var(--bgcolor);

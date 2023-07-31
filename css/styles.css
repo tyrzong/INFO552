@@ -448,13 +448,6 @@ textarea {
   grid-template-columns: auto;
       grid-template-areas: "h cl" "a ." "p ." "s ." "r ." "c .";
 }
-@media (min-width: 785px) {
-  .navbar {
-    -ms-grid-rows: 100px;
-    grid-template-rows: 100px;
-        grid-template-areas: "h  h  h  h  a  p  s  r  c";
-  }
-}
 @media (min-width: 1024px) {
   .navbar {
     -ms-grid-rows: 100px 50px;
@@ -475,11 +468,6 @@ textarea {
     font-size: 65px;
   }
 }
-@media (min-width: 785px) {
-  .navbar .nav-header {
-    text-align: center;
-  }
-}
 .navbar .nav-item {
   margin-left: 16px;
   height: 30px;
@@ -490,15 +478,6 @@ textarea {
           align-items: flex-end;
   display: none;
   color: var(--darktan);
-}
-@media (min-width: 785px) {
-  .navbar .nav-item {
-    text-align: center;
-    display: -ms-grid;
-    display: grid;
-    padding: 45px 0;
-    font-size: 20px;
-  }
 }
 @media (min-width: 1024px) {
   .navbar .nav-item {
@@ -516,15 +495,6 @@ textarea {
   padding-bottom: 0;
   display: none;
   color: var(--darkgrey);
-}
-@media (min-width: 785px) {
-  .navbar .active-nav-item {
-    text-align: center;
-    display: -ms-grid;
-    display: grid;
-    padding: 45px 0;
-    font-size: 20px;
-  }
 }
 @media (min-width: 1024px) {
   .navbar .active-nav-item {
@@ -544,7 +514,7 @@ textarea {
   margin-top: 32px;
   color: var(--darkgrey);
 }
-@media (min-width: 785px) {
+@media (min-width: 1024px) {
   .navbar .collapse-nav-btn {
     display: none;
   }
@@ -593,34 +563,6 @@ textarea {
   -ms-grid-row: 1;
   -ms-grid-column: 3;
   grid-area: cl;
-}
-
-@media (min-width: 785px){
-  #header {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 4;
-  }
-  #about {
-    -ms-grid-row: 1;
-    -ms-grid-column: 5;
-  }
-  #association {
-    -ms-grid-row: 1;
-    -ms-grid-column: 7;
-  }
-  #contact {
-    -ms-grid-row: 1;
-    -ms-grid-column: 9;
-  }
-  #resume {
-    -ms-grid-row: 1;
-    -ms-grid-column: 8;
-  }
-  #projects {
-    -ms-grid-row: 1;
-    -ms-grid-column: 6;
-  }
 }
 
 @media (min-width: 1024px){
@@ -686,6 +628,21 @@ textarea {
   display: grid;
   -ms-grid-columns: auto;
   grid-template-columns: auto;
+  gap: 10px;
+}
+@media (min-width: 1024px) {
+  .card-deck {
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1024px) {
+  .card-deck .card {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: auto auto;
+    grid-template-rows: auto auto;
+  }
 }
 .card-deck .card .card-img {
   padding-top: 20px;
@@ -697,15 +654,45 @@ textarea {
   margin-right: auto;
   max-height: 180px;
 }
+@media (min-width: 1024px) {
+  .card-deck .card .card-img img {
+    max-height: 200px;
+  }
+}
+.card-deck .card .card-img #afsc {
+  content: url("/img/afsc-logo-inverted.png");
+}
+@media (min-width: 1024px) {
+  .card-deck .card .card-img #afsc {
+    content: url("/img/AFSC-removebg-preview.png");
+  }
+}
 .card-deck .card .card-text {
   padding-left: 16px;
   padding-right: 16px;
   padding-bottom: 20px;
 }
+@media (min-width: 1024px) {
+  .card-deck .card .card-text {
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.card-deck .card a {
+  margin-bottom: auto;
+  margin-top: auto;
+}
 
 .dark {
   background-color: var(--darkgrey);
   color: var(--bgcolor);
+}
+@media (min-width: 1024px) {
+  .dark {
+    background-color: var(--bgcolor);
+    color: var(--darkgrey);
+  }
 }
 
 .light {
