@@ -674,7 +674,7 @@ textarea {
 }
 @media (min-width: 1024px) {
   .card-deck .card .card-text {
-    max-width: 300px;
+    max-width: 400px;
     margin-left: auto;
     margin-right: auto;
   }
