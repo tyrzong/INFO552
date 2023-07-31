@@ -381,6 +381,14 @@ template {
   }
 }
 
+.socialIcons a {
+  padding: 3px;
+}
+.socialIcons img {
+  height: 30px;
+  width: 30px;
+}
+
 a {
   text-decoration: none;
 }
