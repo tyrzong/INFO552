@@ -381,14 +381,6 @@ template {
   }
 }
 
-.socialIcons a {
-  padding: 3px;
-}
-.socialIcons img {
-  height: 30px;
-  width: 30px;
-}
-
 a {
   text-decoration: none;
 }
@@ -598,6 +590,21 @@ textarea {
 /* =============
     Footer
 ============= */
+.footer {
+  font-size: smaller;
+  opacity: 80%;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.socialIcons a {
+  padding: 3px;
+}
+.socialIcons img {
+  height: 20px;
+  width: 20px;
+}
+
 /* =============
     page layout
 ============= */
