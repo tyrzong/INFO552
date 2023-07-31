@@ -27,7 +27,7 @@
     // background-color: brown;
     gap: 10px;
     @include lg{
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: auto auto;
     }
     
     .card{
