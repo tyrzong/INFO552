@@ -2,7 +2,13 @@
     Navigation
 ============= */
 .navbar {
-    margin-top: 10px;
+    position: sticky;
+    left: 0;
+    top: 0;
+    background-color: var(--bgcolor);
+
+    padding-top: 15px;
+    padding-bottom: 10px;
     font-weight: 700;
     width: 100%;
     gap: 5px;
@@ -14,17 +20,19 @@
         "a ."
         "p ."
         "s ."
-        "r ."
-        "c .";
+        "r .";
+        // "c .";
+
     // @include md{
     //     grid-template-rows: 100px;
     //     grid-template-areas:
     //     "h  h  h  h  a  p  s  r  c";
     // }
     @include lg{
-        grid-template-rows: 100px 50px;
+        grid-template-rows: 150px;
         grid-template-areas:
-        "h  h  h  h  a  p  s  r  c";
+        // "h  h  h  h  a  p  s  r  c";
+        "h  h  h  h  a  p  s  r";
     }
 
     .nav-header {
@@ -112,9 +120,9 @@
     grid-area: s;
 }
 
-#contact{
-    grid-area: c;
-}
+// #contact{
+//     grid-area: c;
+// }
 
 #resume{
     grid-area: r;

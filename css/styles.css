@@ -428,7 +428,12 @@ textarea {
     Navigation
 ============= */
 .navbar {
-  margin-top: 10px;
+  position: sticky;
+  left: 0;
+  top: 0;
+  background-color: var(--bgcolor);
+  padding-top: 15px;
+  padding-bottom: 10px;
   font-weight: 700;
   width: 100%;
   gap: 5px;
@@ -438,13 +443,13 @@ textarea {
   grid-template-rows: 70px;
   -ms-grid-columns: auto;
   grid-template-columns: auto;
-      grid-template-areas: "h cl" "a ." "p ." "s ." "r ." "c .";
+      grid-template-areas: "h cl" "a ." "p ." "s ." "r .";
 }
 @media (min-width: 1024px) {
   .navbar {
-    -ms-grid-rows: 100px 50px;
-    grid-template-rows: 100px 50px;
-        grid-template-areas: "h  h  h  h  a  p  s  r  c";
+    -ms-grid-rows: 150px;
+    grid-template-rows: 150px;
+        grid-template-areas: "h  h  h  h  a  p  s  r";
   }
 }
 .navbar .nav-header {
@@ -532,12 +537,6 @@ textarea {
   grid-area: s;
 }
 
-#contact {
-  -ms-grid-row: 11;
-  -ms-grid-column: 1;
-  grid-area: c;
-}
-
 #resume {
   -ms-grid-row: 9;
   -ms-grid-column: 1;
@@ -570,10 +569,6 @@ textarea {
     -ms-grid-row: 1;
     -ms-grid-column: 7;
   }
-  #contact {
-    -ms-grid-row: 1;
-    -ms-grid-column: 9;
-  }
   #resume {
     -ms-grid-row: 1;
     -ms-grid-column: 8;
@@ -593,7 +588,6 @@ textarea {
 .footer {
   font-size: smaller;
   opacity: 80%;
-  margin-top: 50px;
   text-align: center;
 }
 
