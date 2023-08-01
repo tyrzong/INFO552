@@ -19,6 +19,10 @@
     padding-left: 16px;
     padding-top: 15px;
     padding-bottom: 15px;
+    display: none;
+    @include lg{
+        display: block;
+    }
 }
 
 .card-deck{

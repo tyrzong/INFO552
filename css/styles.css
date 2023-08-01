@@ -625,6 +625,12 @@ textarea {
   padding-left: 16px;
   padding-top: 15px;
   padding-bottom: 15px;
+  display: none;
+}
+@media (min-width: 1024px) {
+  .page-title {
+    display: block;
+  }
 }
 
 .card-deck {
