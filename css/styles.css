@@ -17,6 +17,7 @@ html {
   --bgcolor: #ece7e2;
   --darkbgcolor: #70798C;
   --darktan: #A99985;
+  --midgrey: #5e5650;
   --darkgrey: #252323;
   --font-fam: "Prompt", sans-serif;
 }
@@ -433,7 +434,7 @@ textarea {
   top: 0;
   background-color: var(--bgcolor);
   padding-top: 15px;
-  padding-bottom: 10px;
+  padding-bottom: 5px;
   font-weight: 700;
   width: 100%;
   gap: 5px;
@@ -488,9 +489,12 @@ textarea {
   margin-left: 16px;
   height: 30px;
   text-align: left;
-  font-size: 13px;
-  display: none;
-  color: var(--darkgrey);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 5px;
+  font-size: 28px;
+  color: var(--midgrey);
 }
 @media (min-width: 1024px) {
   .navbar .active-nav-item {
@@ -516,7 +520,7 @@ textarea {
   }
 }
 .navbar a:hover, .navbar a:active {
-  color: var(--darkgrey);
+  color: var(--midgrey);
 }
 
 #header {

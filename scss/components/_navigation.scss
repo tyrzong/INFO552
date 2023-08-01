@@ -8,7 +8,7 @@
     background-color: var(--bgcolor);
 
     padding-top: 15px;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
     font-weight: 700;
     width: 100%;
     gap: 5px;
@@ -72,10 +72,12 @@
         margin-left: 16px;
         height: 30px;
         text-align: left;
-        font-size: 13px;
+        align-items: center;
+        padding-top: 5px;
+        font-size: 28px;
         // padding-top: 15px 0;
         // padding-bottom: 0;
-        display: none;
+        // display: none;
         // @include md{
         //     text-align: center;
         //     display: grid;
@@ -87,7 +89,7 @@
             padding: 80px 0;
             font-size: 20px;
         }
-        color: var(--darkgrey);
+        color: var(--midgrey);
     }
 
     .collapse-nav-btn{ 
@@ -104,7 +106,7 @@
     }
 
     a:hover, a:active{
-        color: var(--darkgrey);
+        color: var(--midgrey);
     }
 }
 
