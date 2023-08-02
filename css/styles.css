@@ -591,16 +591,36 @@ textarea {
 ============= */
 .footer {
   font-size: smaller;
-  opacity: 80%;
+  opacity: 90%;
   text-align: center;
+  display: -ms-grid;
+  display: grid;
 }
-
-.socialIcons a {
+.footer .socialIcons a {
   padding: 3px;
 }
-.socialIcons img {
+.footer .socialIcons img {
   height: 20px;
   width: 20px;
+}
+.footer #validator {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 6px;
+}
+.footer #validator #html-logo {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 /* =============
