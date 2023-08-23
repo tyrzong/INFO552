@@ -1,7 +1,7 @@
 /* =============
     Variables
 ============= */
-@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;600&family=Poppins:wght@800&display=swap');
 
 
 // Define the breakpoints
@@ -26,6 +26,10 @@ $screen-xl-min: 1200px;
   --darktan: #A99985;
   --midgrey: #5e5650;
   --darkgrey: #252323;
-  --font-fam: 'Prompt', sans-serif;
+  --font-fam-lora: 'Lora', serif;
+  --font-fam-poppins: 'Poppins', sans-serif;
+  --yellow: #fee01c;
+  --tan: #9D9065;
+  --dust: #22211F;
 }
 

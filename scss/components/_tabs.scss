@@ -1,0 +1,28 @@
+.tab-navbar{
+    background-color: var(--yellow);
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 80px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+
+
+    .tab-item{
+        text-decoration: none;
+        font-family: var(--font-fam-poppins);
+        color: var(--tan);
+        text-align: center;
+        padding-top: 5px;
+    }
+
+    a:hover{
+        color: var(--dust)
+    }
+
+    .active{
+        color: var(--dust);
+    }
+
+}

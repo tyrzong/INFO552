@@ -9,85 +9,39 @@
 </head>
 <body>
     <script src="js/scripts-dist.js"></script>
+    <script async src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY_HERE&callback=console.debug&libraries=maps,marker&v=beta">
+    </script>
     <main class="content-grid">
         <div class="content-grid-item">
-            <header class="navbar">
-                <div class="nav-header"><a href="./index.html"><h1>Tyr Zong</h1></a></div>
-                <a class="nav-item" id="about" href="/about.html">About</a>
-                <a class="nav-item" id="association" href="./association.html">Association</a>
-                <a class="nav-item" id="resume" href="./resume.html">Resume</a>
-                <a class="nav-item" id="projects" href="/projects.html">Projects</a>
-                <!-- <a class="nav-item" id="contact" href="/contact.html">Contact</a> -->
-                <a class="collapse-nav-btn" id="collapse" onclick=toggleNav()><img src="/img/bars-solid.svg" alt="collapse button"></a> 
-            </header>
+            <!-- <header class="navbar">
+                <div class="nav-header"><a href="./index.html"><h1>FIND93</h1></a></div>
+                <a class="nav-item" id="about" href="#">About</a>
+                <a class="nav-item" id="calculator" href="#">Octane mix Calculator</a>
+                <a class="nav-item" id="share" href="#">Share</a>
+                <a class="nav-item" id="report" href="#">Report</a>
+                <a class="collapse-nav-btn" id="collapse" onclick=toggleNav()><img src="/img/flag_FILL0_wght400_GRAD0_opsz48.svg" alt="collapse button"></a> 
+            </header> -->
+            <a class="logo93" href="/">
+                <p class="top">Find</p>
+                <p class="mid">93</p>
+                <p class="bot">
+                    Minimum Octane Rating
+                    <br>
+                    (R+M) / 2 Method
+                </p>
+            </a>
             <section id="main-content-grid" class="content">
-                <div id="main-left">
-                    <h2>Purpose Statement</h2>
-                    <p>
-                        Welcome to my portfolio website! My name is Tyr and I'm a master software engineering student. 
-                        I am passionate about leveraging technology to drive innovation and solve complex problems. 
-                        On this portfolio, I proudly present a collection of my most notable projects, which demonstrate 
-                        my technical prowess, problem-solving abilities, and creativity. These projects exemplify my skills 
-                        in various programming languages, frameworks, and development methodologies.
-                    </p>
-                    <h2>Professional Philosophy</h2>
-                    <p>
-                        My professional philosophy is rooted in a commitment to lifelong learning, collaboration, attention to detail, 
-                        and adherence to best practices and industry standards. I firmly believe that continuous learning is vital in a 
-                        rapidly evolving industry. By staying curious, embracing new technologies, and seeking out opportunities for growth, 
-                        I can consistently enhance my skills and knowledge to deliver the best possible outcomes. As a team player, I thrive 
-                        in collaborative environments where I can leverage my strengths to empower and support my teammates. I strive to 
-                        foster an atmosphere of trust, open communication, and shared goals, enabling us to optimize efficiency and achieve 
-                        remarkable results together. Attention to detail is ingrained in my work ethic, as I believe that even the smallest 
-                        aspects can significantly impact the quality and success of a project. By adhering to best practices and industry 
-                        standards, I ensure that my work meets and exceeds expectations, delivering solutions that are reliable, efficient, 
-                        and maintainable.
-                    </p>
-                </div>
-                <div id="main-right">
-                    <br><br>
-                    <div id="profile-pic">
-                        <img src="img/headshot.jpeg" alt="Tyr's headshot">
-                    </div>
-                    <!-- <div>
-                        <h3>Contact Me</h3>
-                        <div class="socialIcons">
-                            <a href="mailto:tianyizong@gmail.com">
-                                <img src="img/email-icon.png" alt="email icon">
-                            </a>
-                            <a target="_blank" href="https://www.linkedin.com/in/tyr-zong-ba5779142">
-                                <img src="img/linkedin-logo.png" alt="linkedin logo">
-                            </a>
-                        </div>
-                    </div> -->
-                </div>
+                <img class="map" src="img/world-map.jpg">
             </section>
+            <div class="tab-navbar">
+                <a class="tab-item active" href="#"><img src="/img/local_gas_station_FILL0_wght400_GRAD0_opsz48.svg" alt="map"><br>Map</a>
+                <a class="tab-item" href="#"><img src="/img/format_list_bulleted_FILL0_wght400_GRAD0_opsz48.svg" alt="list"><br>List</a>
+                <a class="tab-item" href="#"><img src="/img/add_location_alt_FILL0_wght400_GRAD0_opsz48.svg" alt="add"><br>Add</a>
+                <a class="tab-item" href="#"><img src="img/calculate_FILL0_wght400_GRAD0_opsz48.svg" alt="calculator"><br>Calculator</a>
+            </div>
         </div>
     </main>
-    <hr>
-    <footer class="footer">
-        <div id="validator">
-            <span>Validator:</span>
-            <a href="https://validator.w3.org/nu/?doc=https://portfolio--info552tyrzong.netlify.app/index.html" target="_blank">
-                <img id="html-logo" src="img/html-logo.svg" alt="Valid HTML 5">
-                </a>
-        </div>
-        <div>
-            <span>Website developed for INFO552 </span><a href="https://drexel.edu/cci/" target="_blank">Drexel CCI</a>
-            <h4>Contact Me</h4>
-            <div class="socialIcons">
-                <a href="mailto:tianyizong@gmail.com">
-                    <img src="img/email-icon.png" alt="email icon">
-                </a>
-                <a target="_blank" href="https://www.linkedin.com/in/tyr-zong-ba5779142">
-                    <img src="img/linkedin-logo.png" alt="linkedin logo">
-                </a>
-            </div>
-            <h4>©2023 Tyr Zong. All rights reserved.</h4>
-        </div>
-        <div class="footer-col">
-        </div>
-    </footer>
+    
 </body>
 
 </html>
