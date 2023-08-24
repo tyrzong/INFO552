@@ -388,6 +388,7 @@ template {
 
 a {
   text-decoration: none;
+  color: var(--tan);
 }
 
 a.logo93 {
@@ -421,13 +422,14 @@ p.bot {
 }
 
 body {
-  background-color: var(--white);
+  background-color: var(--dust);
   font-family: var(--font-fam-lora);
 }
 
 h1, h2, h3, h4 {
   font-family: var(--font-fam-poppins);
-  font-weight: 900;
+  font-weight: 800;
+  color: var(--yellow);
 }
 
 p {
@@ -709,11 +711,16 @@ gmp-map {
 /* =============
     page layout
 ============= */
-@media (min-width: 1024px) {
-  .content {
-    padding-left: 16px;
-    padding-right: 16px;
-  }
+#main-content-grid {
+  padding-bottom: 80px;
+}
+
+.content {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+.content p, .content li {
+  color: white;
 }
 
 .page-title {
