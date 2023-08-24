@@ -26,17 +26,12 @@ a{
 }
 
 a.logo93{
-    width: 150px;
-    height: 160px;
-    margin: 0 auto;
-    background-color: #fee01c;
-    position: absolute;
-    top: 10px;
-    left: 50%;
-    margin-left: -75px;
-    box-sizing: border-box;
+    width: 140px;
+    height: 140px;
     border-radius: 10px;
+    margin: 15px;
     color: black;
+    background-color: #fee01c;
     text-decoration: none;
     text-align: center;
     font-family: var(--font-fam-poppins);
@@ -45,12 +40,12 @@ a.logo93{
 p.top{
     margin: 0;
     text-transform: uppercase;
-    font-size: 35px;
+    font-size: 37px;
 }
 
 p.mid{
     margin: 0;
-    font-size: 80px;
+    font-size: 60px;
 }
 
 p.bot{

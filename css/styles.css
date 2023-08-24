@@ -2,7 +2,7 @@
     Mixins
 ============= */
 /* ---------------- Font Sizing ---------------- */
-@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;600&family=Poppins:wght@800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;600&family=Poppins:wght@600;800&display=swap");
 html {
   font-size: 100%;
 }
@@ -391,18 +391,12 @@ a {
 }
 
 a.logo93 {
-  width: 150px;
-  height: 160px;
-  margin: 0 auto;
-  background-color: #fee01c;
-  position: absolute;
-  top: 10px;
-  left: 50%;
-  margin-left: -75px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  width: 140px;
+  height: 140px;
   border-radius: 10px;
+  margin: 15px;
   color: black;
+  background-color: #fee01c;
   text-decoration: none;
   text-align: center;
   font-family: var(--font-fam-poppins);
@@ -411,12 +405,12 @@ a.logo93 {
 p.top {
   margin: 0;
   text-transform: uppercase;
-  font-size: 35px;
+  font-size: 37px;
 }
 
 p.mid {
   margin: 0;
-  font-size: 80px;
+  font-size: 60px;
 }
 
 p.bot {
@@ -634,8 +628,8 @@ textarea {
   height: 80px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: auto auto auto auto;
-  grid-template-columns: auto auto auto auto;
+  -ms-grid-columns: (1fr)[5];
+  grid-template-columns: repeat(5, 1fr);
 }
 .tab-navbar .tab-item {
   text-decoration: none;
@@ -643,6 +637,12 @@ textarea {
   color: var(--tan);
   text-align: center;
   padding-top: 5px;
+  font-size: 13px;
+  font-weight: 600;
+}
+.tab-navbar .tab-item img {
+  padding-top: 5px;
+  height: 40px;
 }
 .tab-navbar a:hover {
   color: var(--dust);
@@ -659,7 +659,6 @@ gmp-map {
 
 .map {
   height: 1000px;
-  margin-top: 180px;
 }
 
 /* =============
@@ -711,18 +710,10 @@ gmp-map {
     page layout
 ============= */
 @media (min-width: 1024px) {
-  #main-content-grid {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 60% 16px auto;
-    grid-template-columns: 60% auto;
-    gap: 16px;
+  .content {
+    padding-left: 16px;
+    padding-right: 16px;
   }
-}
-
-.content {
-  padding-left: 16px;
-  padding-right: 16px;
 }
 
 .page-title {
@@ -812,4 +803,16 @@ gmp-map {
 .light {
   background-color: var(--bgcolor);
   color: var(--darkgrey);
+}
+
+header {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 170px auto;
+  grid-template-columns: 170px auto;
+  background-color: var(--dust);
+}
+header h2 {
+  margin: auto;
+  color: var(--yellow);
 }

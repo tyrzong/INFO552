@@ -6,7 +6,7 @@
     width: 100%;
     height: 80px;
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: repeat(5, 1fr);
 
 
     .tab-item{
@@ -15,6 +15,13 @@
         color: var(--tan);
         text-align: center;
         padding-top: 5px;
+        font-size: 13px;
+        font-weight: 600;
+
+        img{
+            padding-top: 5px;
+            height: 40px;
+        }
     }
 
     a:hover{
@@ -24,5 +31,6 @@
     .active{
         color: var(--dust);
     }
+
 
 }

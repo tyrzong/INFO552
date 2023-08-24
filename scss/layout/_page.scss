@@ -3,16 +3,18 @@
 ============= */
 
 #main-content-grid{
-    @include lg{
-        display: grid;
-        grid-template-columns: 60% auto;
-        gap: 16px;
-    }
+    // @include lg{
+    //     display: grid;
+    //     grid-template-columns: 60% auto;
+    //     gap: 16px;
+    // }
 }
 
 .content{
-    padding-left: 16px;
-    padding-right: 16px;
+    @include lg{
+        padding-left: 16px;
+        padding-right: 16px;
+    }
 }
 
 .page-title{
@@ -93,3 +95,13 @@
     color: var(--darkgrey);
 }
 
+header{
+    display: grid;
+    grid-template-columns: 170px auto;
+    background-color: var(--dust);
+
+    h2{
+        margin: auto;
+        color: var(--yellow);
+    }
+}
