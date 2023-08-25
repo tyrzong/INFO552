@@ -688,14 +688,9 @@ textarea {
   color: var(--dust);
 }
 
-gmp-map {
-  height: -webkit-max-content;
-  height: -moz-max-content;
-  height: max-content;
-}
-
 .map {
-  height: 1000px;
+  height: 70vh;
+  width: 100%;
 }
 
 /* =============
