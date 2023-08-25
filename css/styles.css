@@ -432,8 +432,43 @@ h1, h2, h3, h4 {
   color: var(--yellow);
 }
 
+label {
+  color: var(--white);
+}
+
 p {
   font-weight: 300;
+}
+
+table {
+  margin: auto;
+  margin-top: 30px;
+  width: 300px;
+  height: 150px;
+  background-color: var(--tan);
+  text-align: center;
+}
+table select {
+  width: 75px;
+  vertical-align: middle;
+  text-align: center;
+}
+table input {
+  width: 68px;
+  vertical-align: middle;
+  text-align: center;
+}
+
+#calc-result {
+  padding-top: 5px;
+  padding-left: 25px;
+  margin: auto;
+}
+
+strong {
+  font-family: var(--font-fam-poppins);
+  font-size: 22px;
+  color: var(--yellow);
 }
 
 /* =============
