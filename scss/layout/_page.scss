@@ -149,5 +149,8 @@ header{
 
     .span-text{
         margin-top: 11px;
+        @supports (-webkit-touch-callout: none){
+            margin-top: 0;
+        }
     }
 }

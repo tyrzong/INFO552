@@ -915,3 +915,8 @@ header h2 {
 #add-station-form .span-text {
   margin-top: 11px;
 }
+@supports (-webkit-touch-callout: none) {
+  #add-station-form .span-text {
+    margin-top: 0;
+  }
+}
