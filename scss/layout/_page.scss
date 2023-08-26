@@ -41,6 +41,18 @@
         grid-template-columns: auto 47px 47px;
         gap: 5px;
 
+        .list-button-show{
+            // display: none;
+            margin-top: 5px;
+            width: 37px;
+            height: 37px;
+            background-color: var(--yellow);
+            box-shadow: 5px 3px var(--dust);
+            img{
+                height: 37px;
+            }
+        }
+
         .list-button{
             display: none;
             margin-top: 5px;

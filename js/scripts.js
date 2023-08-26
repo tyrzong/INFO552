@@ -10,15 +10,15 @@ function runCalc(){
     document.getElementById("higherneeded").innerHTML = higherneeded.toFixed(2);
 }
 
-function toggleActive(){
-    let listItem = document.getElementsByClassName("test");
-    let buttons = listItem.getElementsByClassName("list-button")
-    for (var i = 0; i<buttons.length; i++){
-        if (buttons[i].style.display == "block"){
-            buttons[i].style.display = "none";
-        }
-        else{
-            buttons[i].style.display = "block";
-        }
-    }
+function toggleActive(listItem){
+    console.log(listItem);
+    // let buttons = listItem.getElementsByClassName("list-button")
+    // for (var i = 0; i<buttons.length; i++){
+    //     if (buttons[i].style.display == "block"){
+    //         buttons[i].style.display = "none";
+    //     }
+    //     else{
+    //         buttons[i].style.display = "block";
+    //     }
+    // }
 }

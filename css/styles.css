@@ -894,6 +894,17 @@ header p.bot {
   grid-template-columns: auto 47px 47px;
   gap: 5px;
 }
+.list-view .list-item .list-button-show {
+  margin-top: 5px;
+  width: 37px;
+  height: 37px;
+  background-color: var(--yellow);
+  -webkit-box-shadow: 5px 3px var(--dust);
+          box-shadow: 5px 3px var(--dust);
+}
+.list-view .list-item .list-button-show img {
+  height: 37px;
+}
 .list-view .list-item .list-button {
   display: none;
   margin-top: 5px;
