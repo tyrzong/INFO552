@@ -372,6 +372,7 @@ template {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: content;
+  margin-bottom: 80px;
 }
 @media (min-width: 785px){
   .content-grid .content-grid-item {
@@ -689,7 +690,7 @@ textarea {
 }
 
 .map {
-  height: 100vh;
+  height: 90vh;
   width: 100%;
 }
 
