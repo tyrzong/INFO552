@@ -882,10 +882,15 @@ header p.bot {
   grid-row: 50px;
   gap: 5px;
   background-color: var(--cream);
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: auto;
 }
 .list-view .list-item {
   height: 50px;
-  width: 93vw;
+  width: 91vw;
+  margin-left: 5px;
   border: none;
   border-bottom: 2px solid var(--tan);
   display: -ms-grid;
