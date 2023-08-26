@@ -3,8 +3,10 @@
 ============= */
 
 .content{ 
-    padding-left: 16px;
-    padding-right: 16px;
+    margin: auto;
+    @supports (-webkit-touch-callout: none){
+        width: 95vw;
+    }
     padding-bottom: 20px;
 
     p,li{
@@ -25,30 +27,65 @@
 .list-view{
     display: grid;
     grid-template-columns: auto;
-    gap: 10px;
+    grid-row: 50px;
+    gap: 5px;
+    background-color: var(--cream);
 
-}
+    .list-item{
+        height: 50px;
+        width: 93vw;
+        // background-color: var(--tan);
+        border: none;
+        border-bottom: 2px solid var(--tan);
+        display: grid;
+        grid-template-columns: auto 47px 47px;
+        gap: 5px;
 
-.dark{
-    background-color: var(--darkgrey);
-    color: var(--bgcolor);
-    @include lg{
-        background-color: var(--bgcolor);
-        color: var(--darkgrey);
+        .list-button{
+            display: none;
+            margin-top: 5px;
+            width: 37px;
+            height: 37px;
+            background-color: var(--yellow);
+            box-shadow: 5px 3px var(--dust);
+            img{
+                height: 37px;
+            }
+        }
     }
-}
-.light{
-    background-color: var(--bgcolor);
-    color: var(--darkgrey);
-}
 
-header{
-    display: grid;
-    grid-template-columns: 170px auto;
-    background-color: var(--dust);
-
-    h2{
-        margin: auto;
-        color: var(--yellow);
+    p{
+        padding-left: 7vw;
+        color: var(--dust);
+        @supports (-webkit-touch-callout: none){
+            height: 30px;
+        } font-family: var(--font-fam-poppins);
     }
+
+
+    .filter{
+        padding-top: 3vw;
+        padding-left: 3vw;
+        display: grid;
+        grid-template-columns: auto 15vw;
+        
+        .filter-input{
+            width: 75vw;
+            height: 40px;
+            @supports (-webkit-touch-callout: none){
+                height: 30px;
+            }
+        }
+        input::placeholder, textarea::placeholder{
+            font-family: var(--font-fam-poppins);
+            color: var(--tan);
+        }
+        
+        img{
+            justify-self: right;
+            height: 33px;
+            margin: auto;
+        }
+    }
+    
 }

@@ -393,36 +393,6 @@ a {
   color: var(--tan);
 }
 
-a.logo93 {
-  width: 140px;
-  height: 140px;
-  border-radius: 10px;
-  margin: 15px;
-  color: var(--dust);
-  background-color: var(--yellow);
-  text-decoration: none;
-  text-align: center;
-  font-family: var(--font-fam-poppins);
-}
-
-p.top {
-  margin: 0;
-  text-transform: uppercase;
-  font-size: 37px;
-}
-
-p.mid {
-  margin: 0;
-  font-size: 60px;
-}
-
-p.bot {
-  font-size: 10px;
-  text-transform: uppercase;
-  margin: 0;
-  line-height: 10px;
-}
-
 body {
   background-color: var(--dust);
   font-family: var(--font-fam-lora);
@@ -439,8 +409,10 @@ label {
   color: var(--cream);
 }
 
-p {
+p, li {
   font-weight: 300;
+  font-size: large;
+  color: var(--cream);
 }
 
 /* =============
@@ -790,6 +762,47 @@ form #gallons {
 /* =============
     Header
 ============= */
+header {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 170px auto;
+  grid-template-columns: 170px auto;
+  background-color: var(--dust);
+}
+header h2 {
+  margin: auto;
+  color: var(--yellow);
+}
+header a.logo93 {
+  width: 140px;
+  height: 140px;
+  border-radius: 10px;
+  margin: 15px;
+  color: var(--dust);
+  background-color: var(--yellow);
+  text-decoration: none;
+  text-align: center;
+  font-family: var(--font-fam-poppins);
+}
+header p {
+  color: var(--dust);
+}
+header p.top {
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 37px;
+}
+header p.mid {
+  margin: 0;
+  font-size: 60px;
+}
+header p.bot {
+  font-size: 10px;
+  text-transform: uppercase;
+  margin: 0;
+  line-height: 10px;
+}
+
 /* =============
     Footer
 ============= */
@@ -836,9 +849,13 @@ form #gallons {
     page layout
 ============= */
 .content {
-  padding-left: 16px;
-  padding-right: 16px;
+  margin: auto;
   padding-bottom: 20px;
+}
+@supports (-webkit-touch-callout: none) {
+  .content {
+    width: 95vw;
+  }
 }
 .content p, .content li {
   color: white;
@@ -861,33 +878,84 @@ form #gallons {
   display: grid;
   -ms-grid-columns: auto;
   grid-template-columns: auto;
-  gap: 10px;
+  -ms-grid-row: 50;
+  grid-row: 50px;
+  gap: 5px;
+  background-color: var(--cream);
 }
-
-.dark {
-  background-color: var(--darkgrey);
-  color: var(--bgcolor);
-}
-@media (min-width: 1024px) {
-  .dark {
-    background-color: var(--bgcolor);
-    color: var(--darkgrey);
-  }
-}
-
-.light {
-  background-color: var(--bgcolor);
-  color: var(--darkgrey);
-}
-
-header {
+.list-view .list-item {
+  height: 50px;
+  width: 93vw;
+  border: none;
+  border-bottom: 2px solid var(--tan);
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 170px auto;
-  grid-template-columns: 170px auto;
-  background-color: var(--dust);
+  -ms-grid-columns: auto 5px 47px 5px 47px;
+  grid-template-columns: auto 47px 47px;
+  gap: 5px;
 }
-header h2 {
+.list-view .list-item .list-button {
+  display: none;
+  margin-top: 5px;
+  width: 37px;
+  height: 37px;
+  background-color: var(--yellow);
+  -webkit-box-shadow: 5px 3px var(--dust);
+          box-shadow: 5px 3px var(--dust);
+}
+.list-view .list-item .list-button img {
+  height: 37px;
+}
+.list-view p {
+  padding-left: 7vw;
+  color: var(--dust);
+  font-family: var(--font-fam-poppins);
+}
+@supports (-webkit-touch-callout: none) {
+  .list-view p {
+    height: 30px;
+  }
+}
+.list-view .filter {
+  padding-top: 3vw;
+  padding-left: 3vw;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 15vw;
+  grid-template-columns: auto 15vw;
+}
+.list-view .filter .filter-input {
+  width: 75vw;
+  height: 40px;
+}
+@supports (-webkit-touch-callout: none) {
+  .list-view .filter .filter-input {
+    height: 30px;
+  }
+}
+.list-view .filter input::-webkit-input-placeholder, .list-view .filter textarea::-webkit-input-placeholder {
+  font-family: var(--font-fam-poppins);
+  color: var(--tan);
+}
+.list-view .filter input::-moz-placeholder, .list-view .filter textarea::-moz-placeholder {
+  font-family: var(--font-fam-poppins);
+  color: var(--tan);
+}
+.list-view .filter input:-ms-input-placeholder, .list-view .filter textarea:-ms-input-placeholder {
+  font-family: var(--font-fam-poppins);
+  color: var(--tan);
+}
+.list-view .filter input::-ms-input-placeholder, .list-view .filter textarea::-ms-input-placeholder {
+  font-family: var(--font-fam-poppins);
+  color: var(--tan);
+}
+.list-view .filter input::placeholder, .list-view .filter textarea::placeholder {
+  font-family: var(--font-fam-poppins);
+  color: var(--tan);
+}
+.list-view .filter img {
+  -ms-grid-column-align: right;
+      justify-self: right;
+  height: 33px;
   margin: auto;
-  color: var(--yellow);
 }
