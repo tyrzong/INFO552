@@ -443,38 +443,6 @@ p {
   font-weight: 300;
 }
 
-table {
-  margin: auto;
-  margin-top: 30px;
-  width: 300px;
-  height: 150px;
-  background-color: var(--tan);
-  text-align: center;
-}
-table select {
-  width: 75px;
-  vertical-align: middle;
-  text-align: center;
-}
-table input {
-  width: 68px;
-  vertical-align: middle;
-  text-align: center;
-}
-
-#calc-result {
-  padding-top: 5px;
-  padding-left: 25px;
-  margin: auto;
-  text-align: center;
-}
-
-strong {
-  font-family: var(--font-fam-poppins);
-  font-size: 22px;
-  color: var(--yellow);
-}
-
 /* =============
     Typography
 ============= */
@@ -499,6 +467,126 @@ input[type=email],
 input[type=password],
 textarea {
   -webkit-appearance: none;
+}
+
+form {
+  background-color: var(--cream);
+  font-family: var(--font-fam-poppins);
+  display: -ms-grid;
+  display: grid;
+  gap: 10px;
+  padding: 7vw;
+  border: 2px solid var(--dust);
+}
+form label {
+  color: var(--dust);
+  font-size: 18px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 85% auto;
+  grid-template-columns: 85% auto;
+}
+form #gallons {
+  width: 62px;
+  height: 25px;
+  border: none;
+  border-bottom: 3px solid var(--dust);
+  -ms-grid-column-align: right;
+      justify-self: right;
+}
+@supports (-webkit-touch-callout: none) {
+  form #gallons {
+    width: 46px;
+    height: 20px;
+  }
+}
+
+#calc-form {
+  padding: 6vw;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  -ms-grid-columns: auto 10%;
+  grid-template-columns: auto 10%;
+}
+#calc-form select {
+  border: none;
+  border-bottom: 3px solid var(--dust);
+  text-align: left;
+  width: 67px;
+  -ms-grid-column-align: right;
+      justify-self: right;
+}
+
+#calc-result {
+  padding-left: 5vw;
+}
+#calc-result strong {
+  font-family: var(--font-fam-poppins);
+  font-size: 30px;
+  font-weight: 800;
+  color: var(--yellow);
+}
+#calc-result p {
+  font-size: 20px;
+}
+
+#add-station-form .form-item {
+  height: 40px;
+  padding: 5px;
+}
+#add-station-form input, #add-station-form textarea, #add-station-form button {
+  color: var(--dust);
+  border: none;
+  outline: none;
+  border-bottom: 5px solid var(--dust);
+}
+#add-station-form input::-webkit-input-placeholder, #add-station-form textarea::-webkit-input-placeholder {
+  color: var(--tan);
+}
+#add-station-form input::-moz-placeholder, #add-station-form textarea::-moz-placeholder {
+  color: var(--tan);
+}
+#add-station-form input:-ms-input-placeholder, #add-station-form textarea:-ms-input-placeholder {
+  color: var(--tan);
+}
+#add-station-form input::-ms-input-placeholder, #add-station-form textarea::-ms-input-placeholder {
+  color: var(--tan);
+}
+#add-station-form input::placeholder, #add-station-form textarea::placeholder {
+  color: var(--tan);
+}
+#add-station-form button {
+  height: 40px;
+  background-color: var(--yellow);
+}
+#add-station-form #form-textarea {
+  margin-bottom: 5px;
+}
+#add-station-form #form-submit {
+  padding: 10px;
+}
+#add-station-form #checkbox-container {
+  margin-top: 0;
+  margin-bottom: 2px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 23px 10px auto;
+  grid-template-columns: 23px auto;
+  gap: 10px;
+}
+@supports (-webkit-touch-callout: none) {
+  #add-station-form #checkbox-container {
+    margin-top: 5px;
+    margin-bottom: -9px;
+  }
+}
+#add-station-form .span-text {
+  margin-top: 11px;
+}
+@supports (-webkit-touch-callout: none) {
+  #add-station-form .span-text {
+    margin-top: 0;
+  }
 }
 
 /* =============
@@ -695,6 +783,8 @@ textarea {
 .map {
   height: 90vh;
   width: 100%;
+  position: relative;
+  z-index: -1;
 }
 
 /* =============
@@ -766,65 +856,12 @@ textarea {
   }
 }
 
-.card-deck {
+.list-view {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: auto;
   grid-template-columns: auto;
   gap: 10px;
-}
-@media (min-width: 1024px) {
-  .card-deck {
-    -ms-grid-columns: 50% 50%;
-    grid-template-columns: 50% 50%;
-  }
-}
-@media (min-width: 1024px) {
-  .card-deck .card {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-rows: auto auto;
-    grid-template-rows: auto auto;
-  }
-}
-.card-deck .card .card-img {
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-.card-deck .card .card-img img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  max-height: 180px;
-}
-@media (min-width: 1024px) {
-  .card-deck .card .card-img img {
-    max-height: 200px;
-  }
-}
-.card-deck .card .card-img #afsc {
-  content: url("/img/afsc-logo-inverted.png");
-}
-@media (min-width: 1024px) {
-  .card-deck .card .card-img #afsc {
-    content: url("/img/AFSC-removebg-preview.png");
-  }
-}
-.card-deck .card .card-text {
-  padding-left: 16px;
-  padding-right: 16px;
-  padding-bottom: 20px;
-}
-@media (min-width: 1024px) {
-  .card-deck .card .card-text {
-    max-width: 400px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-.card-deck .card a {
-  margin-bottom: auto;
-  margin-top: auto;
 }
 
 .dark {
@@ -853,70 +890,4 @@ header {
 header h2 {
   margin: auto;
   color: var(--yellow);
-}
-
-#add-station-form {
-  background-color: var(--cream);
-  font-family: var(--font-fam-poppins);
-  display: -ms-grid;
-  display: grid;
-  gap: 10px;
-  padding: 7vw;
-  border: 2px solid var(--dust);
-}
-#add-station-form .form-item {
-  height: 40px;
-  padding: 5px;
-}
-#add-station-form input, #add-station-form textarea, #add-station-form button {
-  color: var(--dust);
-  border: none;
-  outline: none;
-  border-bottom: 5px solid var(--dust);
-}
-#add-station-form input::-webkit-input-placeholder, #add-station-form textarea::-webkit-input-placeholder {
-  color: var(--tan);
-}
-#add-station-form input::-moz-placeholder, #add-station-form textarea::-moz-placeholder {
-  color: var(--tan);
-}
-#add-station-form input:-ms-input-placeholder, #add-station-form textarea:-ms-input-placeholder {
-  color: var(--tan);
-}
-#add-station-form input::-ms-input-placeholder, #add-station-form textarea::-ms-input-placeholder {
-  color: var(--tan);
-}
-#add-station-form input::placeholder, #add-station-form textarea::placeholder {
-  color: var(--tan);
-}
-#add-station-form label {
-  color: var(--dust);
-  padding-top: 5px;
-}
-#add-station-form button {
-  height: 40px;
-  background-color: var(--yellow);
-}
-#add-station-form #form-textarea {
-  margin-bottom: 5px;
-}
-#add-station-form #form-submit {
-  padding: 10px;
-}
-#add-station-form #checkbox-container {
-  margin-top: 5px;
-  margin-bottom: -7px;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 23px 10px auto;
-  grid-template-columns: 23px auto;
-  gap: 10px;
-}
-#add-station-form .span-text {
-  margin-top: 11px;
-}
-@supports (-webkit-touch-callout: none) {
-  #add-station-form .span-text {
-    margin-top: 0;
-  }
 }

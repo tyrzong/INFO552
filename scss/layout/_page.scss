@@ -22,59 +22,11 @@
     }
 }
 
-.card-deck{
+.list-view{
     display: grid;
     grid-template-columns: auto;
-    // background-color: brown;
     gap: 10px;
-    @include lg{
-        grid-template-columns: 50% 50%;
-    }
-    
-    .card{
-        // border-style: solid;
-        @include lg{
-            display: grid;
-            grid-template-rows: auto auto;
-        }
-        .card-img{
-            padding-top: 20px;
-            padding-bottom: 20px;
-            // background-color: brown;
-            img{
-                display: block;
-                margin-left: auto;
-                margin-right: auto;
-                max-height: 180px;
-                @include lg{
-                    max-height: 200px;
-                }
-                
-            }
-            #afsc{
-                content: url("/img/afsc-logo-inverted.png");
-                @include lg{
-                    content: url("/img/AFSC-removebg-preview.png");
-                }
-                
-            }
-        }
-        .card-text{
-            // background-color: purple;
-            padding-left: 16px;
-            padding-right: 16px;
-            padding-bottom: 20px;
-            @include lg{
-                max-width: 400px;
-                margin-left: auto;
-                margin-right: auto;
-            }
-        }
-        a{
-            margin-bottom: auto;
-            margin-top: auto;
-        }
-    }
+
 }
 
 .dark{
@@ -98,59 +50,5 @@ header{
     h2{
         margin: auto;
         color: var(--yellow);
-    }
-}
-
-#add-station-form{
-    background-color: var(--cream);
-    font-family: var(--font-fam-poppins);
-    display: grid;
-    gap: 10px;
-    padding: 7vw;
-    border: 2px solid var(--dust);
-
-    .form-item{
-        height: 40px;
-        padding: 5px;
-    }
-    input, textarea, button{
-        color: var(--dust);
-        border: none;
-        outline: none;
-        border-bottom: 5px solid var(--dust)
-    }
-    input::placeholder, textarea::placeholder{
-        color: var(--tan);
-    }
-    label{
-        color: var(--dust);
-        padding-top: 5px;
-    }
-    button{
-        height: 40px;
-        background-color: var(--yellow);
-    }
-
-    #form-textarea{
-        margin-bottom: 5px;
-    }
-
-    #form-submit{
-        padding: 10px;
-    }
-
-    #checkbox-container{
-        margin-top: 5px;
-        margin-bottom: -7px;
-        display: grid;
-        grid-template-columns: 23px auto;
-        gap: 10px;
-    }
-
-    .span-text{
-        margin-top: 11px;
-        @supports (-webkit-touch-callout: none){
-            margin-top: 0;
-        }
     }
 }

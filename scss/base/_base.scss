@@ -77,35 +77,3 @@ p{
     font-weight: 300;
 }
 
-table{
-    margin: auto;
-    margin-top: 30px;
-    width: 300px;
-    height: 150px;
-    background-color: var(--tan);
-    text-align: center;
-    select{
-        width: 75px;
-        vertical-align: middle;
-        text-align: center;
-    }
-
-    input{
-        width: 68px;
-        vertical-align: middle;
-        text-align: center;
-    }
-}
-
-#calc-result{
-    padding-top: 5px;
-    padding-left: 25px;
-    margin: auto;
-    text-align: center;
-}
-
-strong{
-    font-family: var(--font-fam-poppins);
-    font-size: 22px;
-    color: var(--yellow);
-}

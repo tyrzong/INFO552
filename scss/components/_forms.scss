@@ -16,3 +16,109 @@ input[type=password],
 textarea {
     -webkit-appearance: none;
 }
+
+form{
+    background-color: var(--cream);
+    font-family: var(--font-fam-poppins);
+    display: grid;
+    gap: 10px;
+    padding: 7vw;
+    border: 2px solid var(--dust);
+
+    label{
+        color: var(--dust);
+        font-size: 18px;
+        display: grid;
+        grid-template-columns: 85% auto;
+    }
+
+    #gallons{
+        width: 62px;
+        height: 25px;
+        @supports (-webkit-touch-callout: none){
+            width: 46px;
+            height: 20px;
+        }
+        border: none;
+        border-bottom: 3px solid var(--dust);
+        justify-self: right;
+    }
+}
+
+#calc-form{
+    padding: 6vw;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    grid-template-columns: auto 10%;
+
+    select{
+        border: none;
+        border-bottom: 3px solid var(--dust);
+        text-align: left;
+        width: 67px;
+        justify-self: right;
+    }
+}
+
+#calc-result{
+    padding-left: 5vw;
+    strong{
+        font-family: var(--font-fam-poppins);
+        font-size: 30px;
+        font-weight: 800;
+        color: var(--yellow);
+    }
+    p{
+        font-size: 20px;
+    }
+}
+
+#add-station-form{
+
+    .form-item{
+        height: 40px;
+        padding: 5px;
+    }
+    input, textarea, button{
+        color: var(--dust);
+        border: none;
+        outline: none;
+        border-bottom: 5px solid var(--dust)
+    }
+    input::placeholder, textarea::placeholder{
+        color: var(--tan);
+    }
+    
+    button{
+        height: 40px;
+        background-color: var(--yellow);
+    }
+
+    #form-textarea{
+        margin-bottom: 5px;
+    }
+
+    #form-submit{
+        padding: 10px;
+    }
+
+    #checkbox-container{
+        margin-top: 0;
+        margin-bottom: 2px;
+        @supports (-webkit-touch-callout: none){
+            margin-top: 5px;
+            margin-bottom: -9px;
+        }
+        display: grid;
+        grid-template-columns: 23px auto;
+        gap: 10px;
+    }
+
+    .span-text{
+        margin-top: 11px;
+        @supports (-webkit-touch-callout: none){
+            margin-top: 0;
+        }
+    }
+}
+
