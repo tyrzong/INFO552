@@ -441,7 +441,7 @@ textarea {
   -webkit-appearance: none;
 }
 
-form {
+.form {
   background-color: var(--cream);
   font-family: var(--font-fam-poppins);
   display: -ms-grid;
@@ -450,7 +450,7 @@ form {
   padding: 7vw;
   border: 2px solid var(--dust);
 }
-form label {
+.form label {
   color: var(--dust);
   font-size: 18px;
   display: -ms-grid;
@@ -458,7 +458,7 @@ form label {
   -ms-grid-columns: 85% auto;
   grid-template-columns: 85% auto;
 }
-form #gallons {
+.form #gallons {
   width: 62px;
   height: 25px;
   border: none;
@@ -467,7 +467,7 @@ form #gallons {
       justify-self: right;
 }
 @supports (-webkit-touch-callout: none) {
-  form #gallons {
+  .form #gallons {
     width: 46px;
     height: 20px;
   }

@@ -26,7 +26,7 @@
             </header>
             <section class="content">
                 <h1>93 Octane mixture Calculator</h1>
-                <form id="calc-form" action="#">
+                <div class="form" id="calc-form" action="#">
                     <label for="lower">Lower Octane</label>
                     <select name="lower" id="lower" onchange="runCalc()">
                         <option value="85">85</option>
@@ -68,8 +68,7 @@
                     
                     <label for="gallons">How Many Gallons?</label>
                     <input type="text" name="gallons" value="15" id="gallons" class="required" autocomplete="off" oninput="runCalc()" required>
-                
-                </form>
+                </div>
                 <div id="calc-result">
                     <p>You'll need</p>
                     <p><strong id="lowerneeded">1.67</strong> gallons of <span id="loweroctane">85</span> octane gas</p>
