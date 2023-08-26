@@ -919,13 +919,16 @@ header p.bot {
 }
 .list-view p {
   padding-left: 7vw;
-  color: var(--dust);
+  color: var(--tan);
   font-family: var(--font-fam-poppins);
 }
 @supports (-webkit-touch-callout: none) {
   .list-view p {
     height: 30px;
   }
+}
+.list-view #demo {
+  color: var(--dust);
 }
 .list-view .filter {
   padding-top: 3vw;

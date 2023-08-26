@@ -42,7 +42,6 @@
         gap: 5px;
 
         .list-button-show{
-            // display: none;
             margin-top: 5px;
             width: 37px;
             height: 37px;
@@ -68,12 +67,15 @@
 
     p{
         padding-left: 7vw;
-        color: var(--dust);
+        color: var(--tan);
         @supports (-webkit-touch-callout: none){
             height: 30px;
         } font-family: var(--font-fam-poppins);
     }
-
+    
+    #demo{
+        color: var(--dust);
+    }
 
     .filter{
         padding-top: 3vw;

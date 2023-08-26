@@ -10,8 +10,13 @@ function runCalc(){
     document.getElementById("higherneeded").innerHTML = higherneeded.toFixed(2);
 }
 
-function toggleActive(listItem){
-    console.log(listItem);
+function toggleDemo(demo){
+    // alert("still working on this");
+    if (demo){
+        window.location.replace("/list.html");
+    }else{
+        window.location.replace("/demo.html");
+    }
     // let buttons = listItem.getElementsByClassName("list-button")
     // for (var i = 0; i<buttons.length; i++){
     //     if (buttons[i].style.display == "block"){
