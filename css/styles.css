@@ -464,6 +464,7 @@ table input {
   padding-top: 5px;
   padding-left: 25px;
   margin: auto;
+  text-align: center;
 }
 
 strong {
@@ -743,7 +744,7 @@ textarea {
     page layout
 ============= */
 #main-content-grid {
-  padding-bottom: 80px;
+  margin-bottom: 80px;
 }
 
 .content {
