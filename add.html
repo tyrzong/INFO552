@@ -24,10 +24,21 @@
                 </a>
                 <h2>The right fuel for maximum performance</h2>
             </header>
-            <section id="main-content-grid" class="content">
+            <section class="content">
                 <h1>Add a station</h1>
-                <form>
-                    
+                <form action="#" id="add-station-form">
+                    <input class="form-item" type="text" placeholder="Station Name" required>
+                    <input class="form-item" type="text" placeholder="Street Address" required>
+                    <input class="form-item" type="text" placeholder="City" required>
+                    <input class="form-item" type="text" placeholder="State" required>
+                    <input class="form-item" type="text" placeholder="Zipcode" required>
+                    <input class="form-item" type="tel" placeholder="Phone Number" required>
+                    <label class="form-item" id="checkbox-container">
+                        <input type="checkbox" name="octane" value="higher">
+                        <span class="span-text" >Has Higher than 93 Octane</span>
+                    </label>
+                    <textarea id="form-textarea" placeholder="Additional Info" rows="5"></textarea>
+                    <button class="form-item" id="form-submit" type="submit">SUBMIT</button>
                 </form>
             </section>
         </div>

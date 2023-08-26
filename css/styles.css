@@ -24,6 +24,7 @@ html {
   --yellow: #fee01c;
   --tan: #9D9065;
   --dust: #22211F;
+  --cream: #FFF9E8;
 }
 
 img {
@@ -425,6 +426,7 @@ p.bot {
 body {
   background-color: var(--dust);
   font-family: var(--font-fam-lora);
+  color: var(--cream);
 }
 
 h1, h2, h3, h4 {
@@ -434,7 +436,7 @@ h1, h2, h3, h4 {
 }
 
 label {
-  color: var(--white);
+  color: var(--cream);
 }
 
 p {
@@ -743,13 +745,10 @@ textarea {
 /* =============
     page layout
 ============= */
-#main-content-grid {
-  margin-bottom: 80px;
-}
-
 .content {
   padding-left: 16px;
   padding-right: 16px;
+  padding-bottom: 20px;
 }
 .content p, .content li {
   color: white;
@@ -854,4 +853,65 @@ header {
 header h2 {
   margin: auto;
   color: var(--yellow);
+}
+
+#add-station-form {
+  background-color: var(--cream);
+  font-family: var(--font-fam-poppins);
+  display: -ms-grid;
+  display: grid;
+  gap: 10px;
+  padding: 7vw;
+  border: 2px solid var(--dust);
+}
+#add-station-form .form-item {
+  height: 40px;
+  padding: 5px;
+}
+#add-station-form input, #add-station-form textarea, #add-station-form button {
+  color: var(--dust);
+  border: none;
+  outline: none;
+  border-bottom: 5px solid var(--dust);
+}
+#add-station-form input::-webkit-input-placeholder, #add-station-form textarea::-webkit-input-placeholder {
+  color: var(--tan);
+}
+#add-station-form input::-moz-placeholder, #add-station-form textarea::-moz-placeholder {
+  color: var(--tan);
+}
+#add-station-form input:-ms-input-placeholder, #add-station-form textarea:-ms-input-placeholder {
+  color: var(--tan);
+}
+#add-station-form input::-ms-input-placeholder, #add-station-form textarea::-ms-input-placeholder {
+  color: var(--tan);
+}
+#add-station-form input::placeholder, #add-station-form textarea::placeholder {
+  color: var(--tan);
+}
+#add-station-form label {
+  color: var(--dust);
+  padding-top: 5px;
+}
+#add-station-form button {
+  height: 40px;
+  background-color: var(--yellow);
+}
+#add-station-form #form-textarea {
+  margin-bottom: 5px;
+}
+#add-station-form #form-submit {
+  padding: 10px;
+}
+#add-station-form #checkbox-container {
+  margin-top: 5px;
+  margin-bottom: -7px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 23px 10px auto;
+  grid-template-columns: 23px auto;
+  gap: 10px;
+}
+#add-station-form .span-text {
+  margin-top: 11px;
 }

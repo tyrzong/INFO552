@@ -2,18 +2,10 @@
     page layout
 ============= */
 
-#main-content-grid{
-    margin-bottom: 80px;
-    // @include lg{
-    //     display: grid;
-    //     grid-template-columns: 60% auto;
-    //     gap: 16px;
-    // }
-}
-
 .content{ 
     padding-left: 16px;
     padding-right: 16px;
+    padding-bottom: 20px;
 
     p,li{
         color: white;
@@ -106,5 +98,56 @@ header{
     h2{
         margin: auto;
         color: var(--yellow);
+    }
+}
+
+#add-station-form{
+    background-color: var(--cream);
+    font-family: var(--font-fam-poppins);
+    display: grid;
+    gap: 10px;
+    padding: 7vw;
+    border: 2px solid var(--dust);
+
+    .form-item{
+        height: 40px;
+        padding: 5px;
+    }
+    input, textarea, button{
+        color: var(--dust);
+        border: none;
+        outline: none;
+        border-bottom: 5px solid var(--dust)
+    }
+    input::placeholder, textarea::placeholder{
+        color: var(--tan);
+    }
+    label{
+        color: var(--dust);
+        padding-top: 5px;
+    }
+    button{
+        height: 40px;
+        background-color: var(--yellow);
+    }
+
+    #form-textarea{
+        margin-bottom: 5px;
+    }
+
+    #form-submit{
+        padding: 10px;
+    }
+
+    #checkbox-container{
+        margin-top: 5px;
+        margin-bottom: -7px;
+        display: grid;
+        grid-template-columns: 23px auto;
+        gap: 10px;
+    }
+
+    .span-text{
+        margin-top: 11px;
     }
 }
