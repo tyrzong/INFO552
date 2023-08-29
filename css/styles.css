@@ -729,8 +729,8 @@ textarea {
   height: 80px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[5];
-  grid-template-columns: repeat(5, 1fr);
+  -ms-grid-columns: (20vw)[5];
+  grid-template-columns: repeat(5, 20vw);
 }
 .tab-navbar .tab-item {
   text-decoration: none;
@@ -879,6 +879,7 @@ header p.bot {
   -ms-grid-columns: auto;
   grid-template-columns: auto;
   -ms-grid-row: 50;
+  grid-row: 50px;
   gap: 5px;
   background-color: var(--cream);
   width: -webkit-max-content;
