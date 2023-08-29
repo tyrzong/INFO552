@@ -779,7 +779,6 @@ textarea {
   height: 90vh;
   width: 100%;
   position: relative;
-  z-index: -1;
 }
 
 /* =============
