@@ -729,8 +729,8 @@ textarea {
   height: 80px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (20vw)[5];
-  grid-template-columns: repeat(5, 20vw);
+  -ms-grid-columns: 20vw 20vw 20vw 20vw 20vw;
+  grid-template-columns: 20vw 20vw 20vw 20vw 20vw;
 }
 .tab-navbar .tab-item {
   text-decoration: none;

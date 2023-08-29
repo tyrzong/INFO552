@@ -6,7 +6,7 @@
     width: 100%;
     height: 80px;
     display: grid;
-    grid-template-columns: repeat(5, 20vw);
+    grid-template-columns: 20vw 20vw 20vw 20vw 20vw;
 
     .tab-item{
         text-decoration: none;
