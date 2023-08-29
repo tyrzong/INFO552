@@ -480,6 +480,12 @@ textarea {
   -ms-grid-columns: auto 10%;
   grid-template-columns: auto 10%;
 }
+@media (min-width: 1024px) {
+  #calc-form {
+    width: 400px;
+    margin: auto;
+  }
+}
 #calc-form select {
   border: none;
   border-bottom: 3px solid var(--dust);
@@ -492,6 +498,12 @@ textarea {
 #calc-result {
   padding-left: 5vw;
 }
+@media (min-width: 1024px) {
+  #calc-result {
+    width: 400px;
+    margin: auto;
+  }
+}
 #calc-result strong {
   font-family: var(--font-fam-poppins);
   font-size: 30px;
@@ -502,6 +514,17 @@ textarea {
   font-size: 20px;
 }
 
+#add-station-form {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: auto;
+}
+@media (min-width: 1024px) {
+  #add-station-form {
+    padding: 4vw;
+  }
+}
 #add-station-form .form-item {
   height: 40px;
   padding: 5px;
@@ -885,6 +908,12 @@ header p.bot {
   width: max-content;
   margin: auto;
 }
+@media (min-width: 1024px) {
+  .list-view {
+    width: 100%;
+    margin: auto;
+  }
+}
 .list-view .list-item {
   height: 50px;
   width: 91vw;
@@ -896,6 +925,18 @@ header p.bot {
   -ms-grid-columns: auto 5px 47px 5px 47px;
   grid-template-columns: auto 47px 47px;
   gap: 5px;
+}
+@media (min-width: 1024px) {
+  .list-view .list-item {
+    width: 100%;
+    margin: auto;
+  }
+}
+@media (min-width: 1024px) {
+  .list-view .list-item {
+    -ms-grid-columns: auto 47px 47px 5vw;
+    grid-template-columns: auto 47px 47px 5vw;
+  }
 }
 .list-view .list-item .list-button-show {
   margin-top: 5px;
@@ -925,6 +966,11 @@ header p.bot {
   color: var(--tan);
   font-family: var(--font-fam-poppins);
 }
+@media (min-width: 1024px) {
+  .list-view p {
+    padding-left: 3vw;
+  }
+}
 @supports (-webkit-touch-callout: none) {
   .list-view p {
     height: 30px;
@@ -935,15 +981,25 @@ header p.bot {
 }
 .list-view .filter {
   padding-top: 3vw;
-  padding-left: 3vw;
+  padding-left: 7vw;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: auto 15vw;
   grid-template-columns: auto 15vw;
 }
+@media (min-width: 1024px) {
+  .list-view .filter {
+    padding-left: 3vw;
+  }
+}
 .list-view .filter .filter-input {
   width: 75vw;
   height: 40px;
+}
+@media (min-width: 1024px) {
+  .list-view .filter .filter-input {
+    width: 100%;
+  }
 }
 @supports (-webkit-touch-callout: none) {
   .list-view .filter .filter-input {

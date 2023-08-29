@@ -24,6 +24,7 @@ textarea {
     gap: 10px;
     padding: 7vw;
     border: 2px solid var(--dust);
+    
 
     label{
         color: var(--dust);
@@ -50,7 +51,11 @@ textarea {
     padding-top: 17px;
     padding-bottom: 17px;
     grid-template-columns: auto 10%;
-
+    @include lg{
+        width: 400px;
+        margin: auto;
+    }
+    
     select{
         border: none;
         border-bottom: 3px solid var(--dust);
@@ -61,6 +66,10 @@ textarea {
 }
 
 #calc-result{
+    @include lg{
+        width: 400px;
+        margin: auto;
+    }
     padding-left: 5vw;
     strong{
         font-family: var(--font-fam-poppins);
@@ -74,7 +83,12 @@ textarea {
 }
 
 #add-station-form{
-
+    width: max-content;
+    margin: auto;
+    @include lg{
+        padding: 4vw;
+    }
+    
     .form-item{
         height: 40px;
         padding: 5px;
