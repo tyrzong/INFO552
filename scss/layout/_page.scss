@@ -29,8 +29,11 @@
     grid-template-columns: auto;
     gap: 5px;
     background-color: var(--cream);
-    width: 100%;
+    width: max-content;
     margin: auto;
+    @include lg{
+        width: 100%;
+    }
 
     .list-item{
         height: min-content;
@@ -113,7 +116,7 @@
         padding-top: 3vw;
         margin-left: 7vw;
         @include lg{
-            margin-left: 2.5vw;
+            padding-left: 3vw;
         }
         display: grid;
         grid-template-columns: auto 15vw;

@@ -902,8 +902,15 @@ header p.bot {
   grid-template-columns: auto;
   gap: 5px;
   background-color: var(--cream);
-  width: 100%;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
   margin: auto;
+}
+@media (min-width: 1024px) {
+  .list-view {
+    width: 100%;
+  }
 }
 .list-view .list-item {
   height: -webkit-min-content;
@@ -1024,7 +1031,7 @@ header p.bot {
 }
 @media (min-width: 1024px) {
   .list-view .filter {
-    margin-left: 2.5vw;
+    padding-left: 3vw;
   }
 }
 @media (min-width: 1024px) {
