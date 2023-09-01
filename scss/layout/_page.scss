@@ -15,7 +15,7 @@
 }
 
 .info{
-    margin-right: 3vw;
+    margin: 3vw;
 }
 
 .list-view{
@@ -74,7 +74,7 @@
             margin-bottom: 0;
         }
 
-        .info{
+        .gas-info{
             grid-area: info;
             font-family: var(--font-fam-lora);
             font-weight: 600;

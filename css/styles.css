@@ -879,7 +879,7 @@ header p.bot {
 }
 
 .info {
-  margin-right: 3vw;
+  margin: 3vw;
 }
 
 .list-view {
@@ -947,7 +947,7 @@ header p.bot {
   grid-area: name;
   margin-bottom: 0;
 }
-.list-view .list-item .info {
+.list-view .list-item .gas-info {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
   grid-area: info;
@@ -976,7 +976,7 @@ header p.bot {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
   }
-  .list-view .list-item .info {
+  .list-view .list-item .gas-info {
     -ms-grid-row: 2;
     -ms-grid-column: 1;
   }
