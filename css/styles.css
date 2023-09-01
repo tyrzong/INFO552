@@ -973,6 +973,7 @@ header p.bot {
   padding-right: 5px;
   color: var(--dust);
   opacity: 80%;
+  margin-top: 3px;
 }
 .list-view .list-item .direction {
   -ms-grid-row: 1;
