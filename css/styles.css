@@ -937,8 +937,8 @@ header p.bot {
 }
 @media (min-width: 1024px) {
   .list-view .list-item {
-    -ms-grid-columns: auto 47px 47px 5vw;
-    grid-template-columns: auto 47px 47px 5vw;
+    -ms-grid-columns: auto 47px 47px 2vw;
+    grid-template-columns: auto 47px 47px 2vw;
         grid-template-areas: "name direction report ." "info direction report .";
   }
 }
@@ -1035,6 +1035,12 @@ header p.bot {
     padding-left: 3vw;
   }
 }
+@media (min-width: 1024px) {
+  .list-view .filter {
+    -ms-grid-columns: auto 8vw;
+    grid-template-columns: auto 8vw;
+  }
+}
 .list-view .filter .filter-input {
   width: 75vw;
   height: 40px;
@@ -1073,5 +1079,10 @@ header p.bot {
   -ms-grid-column-align: right;
       justify-self: right;
   height: 33px;
-  margin: auto;
+  padding-right: 2.5vw;
+}
+@media (min-width: 1024px) {
+  .list-view .filter img {
+    padding-right: 3vw;
+  }
 }
