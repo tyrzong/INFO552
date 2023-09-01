@@ -29,9 +29,12 @@
     grid-template-columns: auto;
     gap: 5px;
     background-color: var(--cream);
-    width: max-content;
+    width: 100%;
     margin: auto;
     @include lg{
+        width: 100%;
+    }
+    @supports (-webkit-touch-callout: none){
         width: 100%;
     }
 

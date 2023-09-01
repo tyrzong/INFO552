@@ -902,12 +902,15 @@ header p.bot {
   grid-template-columns: auto;
   gap: 5px;
   background-color: var(--cream);
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
+  width: 100%;
   margin: auto;
 }
 @media (min-width: 1024px) {
+  .list-view {
+    width: 100%;
+  }
+}
+@supports (-webkit-touch-callout: none) {
   .list-view {
     width: 100%;
   }
