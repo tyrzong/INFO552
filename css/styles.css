@@ -912,6 +912,7 @@ header p.bot {
 }
 @supports (-webkit-touch-callout: none) {
   .list-view {
+    margin-left: 0;
     width: 100%;
   }
 }
