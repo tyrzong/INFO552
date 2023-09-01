@@ -4,23 +4,13 @@
 
 .content{ 
     margin: auto;
-    @supports (-webkit-touch-callout: none){
-        width: 95vw;
-    }
+    // @supports (-webkit-touch-callout: none){
+    //     width: 95vw;
+    // }
     padding-bottom: 20px;
 
-    p,li{
-        color: white;
-    }
-}
-
-.page-title{
-    padding-left: 16px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    display: none;
-    @include lg{
-        display: block;
+    h1{
+        padding-left: 5vw;
     }
 }
 
@@ -43,7 +33,6 @@
             width: 100%;
             margin: auto;
         }
-        margin-left: 5px;
         border: none;
         border-bottom: 2px solid var(--tan);
         display: grid;
@@ -102,7 +91,7 @@
     }
 
     p{
-        padding-left: 7vw;
+        padding-left: 5vw;
         @include lg{
             padding-left: 3vw;
         }
@@ -115,7 +104,7 @@
 
     .filter{
         padding-top: 3vw;
-        margin-left: 7vw;
+        margin-left: 5vw;
         @include lg{
             padding-left: 0;
             margin-left: 3vw;
