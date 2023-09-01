@@ -37,7 +37,7 @@
     }
 
     .list-item{
-        height: 50px;
+        height: min-content;
         width: 91vw;
         @include lg{
             width: 100%;
@@ -48,13 +48,21 @@
         border-bottom: 2px solid var(--tan);
         display: grid;
         grid-template-columns: auto 47px 47px;
+        grid-template-areas: 
+            "name direction report"
+            "info direction report";
         @include lg{
             grid-template-columns: auto 47px 47px 5vw;
+            grid-template-areas: 
+            "name direction report ."
+            "info direction report .";
         }
         gap: 5px;
 
-        .list-button-show{
+
+        .list-button{
             margin-top: 5px;
+            margin: auto;
             width: 37px;
             height: 37px;
             background-color: var(--yellow);
@@ -64,16 +72,31 @@
             }
         }
 
-        .list-button{
+        .hide{
             display: none;
-            margin-top: 5px;
-            width: 37px;
-            height: 37px;
-            background-color: var(--yellow);
-            box-shadow: 5px 3px var(--dust);
-            img{
-                height: 37px;
-            }
+        }
+
+        .name{
+            grid-area: name;
+            margin-bottom: 0;
+        }
+
+        .info{
+            grid-area: info;
+            font-family: var(--font-fam-lora);
+            font-weight: 600;
+            font-size: 15px;
+            padding-right: 5px;
+            color: var(--dust);
+            opacity: 80%;
+        }
+
+        .direction{
+            grid-area: direction;
+        }
+
+        .report{
+            grid-area: report;
         }
     }
 
@@ -82,15 +105,12 @@
         @include lg{
             padding-left: 3vw;
         }
-        color: var(--tan);
+        color: var(--dust);
         @supports (-webkit-touch-callout: none){
             height: 30px;
         } font-family: var(--font-fam-poppins);
     }
     
-    #demo{
-        color: var(--dust);
-    }
 
     .filter{
         padding-top: 3vw;
