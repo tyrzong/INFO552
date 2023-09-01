@@ -875,7 +875,11 @@ header p.bot {
   padding-bottom: 20px;
 }
 .content h1 {
-  padding-left: 5vw;
+  padding-left: 4vw;
+}
+
+.info {
+  margin: 3vw;
 }
 
 .list-view {
