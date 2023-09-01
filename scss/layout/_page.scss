@@ -29,10 +29,8 @@
     grid-template-columns: auto;
     gap: 5px;
     background-color: var(--cream);
+    width: 100%;
     margin: auto;
-    @include lg{
-        width: 100%;
-    }
 
     .list-item{
         height: min-content;
