@@ -938,6 +938,9 @@ header p.bot {
       -ms-flex-align: center;
           align-items: center;
 }
+.validator .validator-logo {
+  height: 50px;
+}
 
 #mapValidator {
   padding-bottom: 25px;
