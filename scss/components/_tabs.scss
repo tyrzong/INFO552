@@ -50,9 +50,12 @@
         font-family: var(--font-fam-poppins);
         color: var(--tan);
         text-align: right;
+        @include lg{
+            padding-right: 7vw;
+        }
         padding-right: 5vw;
         padding-top: 5px;
-        font-size: 13px;
+        font-size: 15px;
         font-weight: 600;
     }
 
