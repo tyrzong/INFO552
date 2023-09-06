@@ -139,3 +139,22 @@
     }
     
 }
+
+.validator{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+
+    #html-logo{
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+#mapValidator{
+    padding-bottom: 25px;
+}
