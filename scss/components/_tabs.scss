@@ -30,5 +30,38 @@
     .active{
         color: var(--dust);
     }
-
 }
+
+#dropdown{
+    display: none;
+    background-color: var(--yellow);
+    position: fixed;
+    right: 0;
+    bottom: 80px;
+    width: 25vw;
+    padding: 10px;
+    @include lg{
+        width: 20vw;
+    }
+    z-index: 1;
+
+    a{
+        text-decoration: none;
+        font-family: var(--font-fam-poppins);
+        color: var(--tan);
+        text-align: right;
+        padding-right: 5vw;
+        padding-top: 5px;
+        font-size: 13px;
+        font-weight: 600;
+    }
+
+    a:hover{
+        color: var(--dust);
+    }
+
+    .active{
+        color: var(--dust);
+    }
+}
+

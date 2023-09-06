@@ -25,3 +25,12 @@ function toggleItem(elm){
         hidden[0].classList.remove("hide");
     }
 }
+
+function toggleDropdown(){
+    let dropdown = document.getElementById("dropdown");
+    if (dropdown.style.display != "grid"){
+        dropdown.style.display = "grid";
+    }else{
+        dropdown.style.display = "none";
+    }
+}
