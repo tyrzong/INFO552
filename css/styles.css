@@ -707,6 +707,7 @@ header p.bot {
 .footer {
   opacity: 85%;
   text-align: center;
+  padding-bottom: 10px;
 }
 .footer .socialIcon {
   height: 25px;
